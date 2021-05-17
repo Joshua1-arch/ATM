@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    
+</head>
+<body>
+    <script>
+        var balance= 1000000;
+        var amount;
+        var ending= 0;
+        var one=1;
+        var two=2;
+        var three=3;
+        var four=4;
+        var five=5;
+        var six=6;
+        var seven=7;
+        var eight=8;
+        var nine=9;
+        var ten=0;
+        var eleven=0;
+        var twelve=0;
+
+
+        function a(){
+            display.value+=one;
+        }
+        function s(){
+            display.value+=two;
+        }
+        function d(){
+            display.value+=three;
+        }
+        function g(){
+            display.value +=four;
+        }
+        function h(){
+            display.value+=five;
+        }
+        function j(){
+            display.value+=six;
+        }
+        function k(){
+            display.value+=twelve;
+        }
+        function l(){
+            display.value+=seven;
+        }
+        function z(){
+            display.value+=eight;
+        }
+        function x(){
+            display.value+=nine;
+            
+        }
+        function y(){
+            display.value +=ending ;
+        }
+        function c(){
+            message.value="input your password at the last provided space then enter"
+             display.value=""
+        }
+       
+        function f(){
+             if( money.value == 09076639974){
+            message.value="Wellcome Adekunle joshua"
+            money.value=""
+        }
+        else{
+            message.value="incorrect password!!"
+        }
+    }
+        function startup(){
+            message.value="Wellcome!!, Please input your Password below by clicking (Start) then (e)nter"
+        }
+           
+        function process(){
+            message.value="success";
+             amount=display.value;
+            balance = parseInt(balance) + parseInt(amount);
+        }
+        function share(){
+            message.value = "Input the account number";
+            }
+        
+       
+
+            function showbalance(){
+		display.value = balance;
+		message.value = "your balance is:"
+		}
+        function withdraw(){
+            message.value= "how much do you want to withdraw?"
+            display.value=""
+        }
+        function enter(){
+            amount=display.value
+        if ( balance >= amount ) {
+             message.value = "please take your cash"
+             balance = balance - amount;
+              display.value=""
+             document.getElementById('please take your cash').play();
+            }
+            else {
+                message.value= "insufficient fund!";
+                 document.getElementById('insufficient fund').play();
+            
+        }
+
+     
+        }
+        function dismiss(){
+            message.value="Thanks for choosing our bank"
+            display.value=""
+        }
+        function deposit(){
+            message.value="how much you want to deposit? after indicating how much you want to deposit then press confirm!"
+           
+        }
+
+        function end(){
+            message.value="Aborted!!"
+            display.value= "you have not transfer any money";
+           
+        }
+             
+        
+        
+    </script>
+
+        <button style="position:absolute; bottom: 370px;border-radius: 100px; right:770px;width:43px;height: 25px;font-size: 7px; background-color: green;" onclick="end()">
+            End
+        </button>
+        <button style="position:absolute; bottom: 403px;border-radius: 100px; right:770px;width:43px;height: 25px;font-size: 7px;background-color: green;" onclick="dismiss()">
+            logout
+        </button>
+        <button style="position:absolute; bottom: 440px;border-radius: 100px; right: 770px; font-size: 7px; width:43px;height: 25px; background-color: green;" onclick="deposit()">
+            Deposit
+        </button>
+
+
+
+        <button style="position:absolute; bottom: 370px;border-radius: 100px; right:450px;width:43px;height: 25px;font-size: 7px; background-color: green;"onclick="share()">
+            Transfer
+        </button>
+        <button style="position:absolute; bottom: 403px;border-radius: 100px; right:450px;width:43px;height: 25px;font-size: 7px; background-color: green;" onclick="showbalance()">
+            Balance
+        </button>
+        <button style="position:absolute; bottom: 440px;border-radius: 100px; right: 450px; font-size: 7px; width:43px;height: 25px; background-color: green;" onclick="withdraw()">
+            Withdraw
+        </button>
+   <center>
+    <table border="50" style="height: 411px;width: 40%; background-color: black; ">
+        <tr >
+            
+                <td><center> <span style="color: red;">A</span><span style="color: green;">T</span><span style="color: red;">M
+                </span></center></td>
+            
+        </tr>
+        <tr style="border:none">
+            <!-- <td>
+                <button>Transfer</button>
+            </td>
+            <td>
+                <button>Balance</button>
+            </td> -->
+            <td style="border:none"><textarea   id="message" style="position: absolute;right: 500px; top: 174px; height: 50px;width: 20%; background-color: grey;border-color: black;"></textarea>
+            </td>
+        </tr>
+        <tr style="border:none">
+            <!-- <td><button>dfbdf</button></td> -->
+            <td style="border:none">
+                
+                <textarea  id="display"  style="position: absolute;right: 500px;top: 230px; height: 50px; width: 20%; background-color: grey; border-color: black;"></textarea>
+            </td>
+            
+        </tr>
+           
+
+        
+    </table>
+   </center>
+
+        <table border="1" style="position:absolute; right:533px; top:286px; background-color: black;" >
+    <tr style="background-color: green;"><td><button id="btna" style="background-color: green;" onclick="a()">1</button></td><td><button id="btnb" style="background-color: green;" onclick="s()">2</button></td><td><button id="btnc" style="background-color: green;" onclick="d()">3</button></td><td><button id="btnd" style="background-color: green;" onclick="enter()">enter</button></td></tr>
+    <tr style="background-color: green;"><td><button id="btne" style="background-color: green;" onclick="g()">4</button></td><td><button id="btnf" style="background-color: green;" onclick="h()">5</button></td><td><button id="btng" style="background-color: green;" onclick="j()">6</button></td><td><button id="btnh" style="background-color: green;" onclick="k()">end</button></td></tr>
+    <tr style="background-color: green;"><td><button id="btni" style="background-color: green;" onclick="l()">7</button></td><td><button id="btnj" style="background-color: green;" onclick="z()">8</button></td><td><button id="btnk" style="background-color: green;" onclick="x()">9</button></td><td><button id="btnl" style="background-color: green;" onclick="y()">0</button></td><td> <button id="reek" onclick="c()" style="background-color: green;">start </button>
+    </td>
+    
+     
+    </table>
+
+
+    <audio src="audio1.3gpp" id="please take your cash" preload="audio"></audio>
+	<audio src="audio2.3gpp" id="insufficient fund" preload="audio"></audio>
+</body>
+</html>
